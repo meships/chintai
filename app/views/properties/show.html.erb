@@ -7,7 +7,7 @@
 
 <p>
   <strong>賃料:</strong>
-  <%= @property.price %>
+  <%= @property.price %>円
 </p>
 
 <p>
@@ -17,7 +17,7 @@
 
 <p>
   <strong>築年数:</strong>
-  <%= @property.age %>
+  <%= @property.age %>年
 </p>
 
 <p>
@@ -40,8 +40,8 @@
     <%=nearest_station.station_name%>
   </p>
   <p>
-    <strong>徒歩:</strong>
-    <%=nearest_station.walk_by%>
+    <strong>徒歩分数:</strong>
+    <%=nearest_station.walk_by%>分
   </p>
 <%end%>
 <%= link_to '編集', edit_property_path(@property) %> |
